@@ -1,5 +1,5 @@
 # Lossy Image Compression
-Image downsampling, discrete cosine transform, quantization, etc. implemented using Numpy and Scipy.
+Image downsampling, discrete cosine transform, quantization, etc. implemented using Numpy and Scipy. More details [here](https://towardsdatascience.com/whats-lost-in-jpeg-e5e6e80b1f94).
 
 ## Usage
 - main.py: main script for compressing image.
