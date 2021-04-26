@@ -67,6 +67,9 @@ def process_block(block, index):
     compressed = dct2d.backward(decoded)
     return compressed
 
+# Use Pool from the multiprocessing library becasue the compression task is 
+# highly parallelizable. The same operation is performed on different blocks
+# where there is no dependency among the data. 
 compressed = np.array(Pool().starmap(process_block, zip(blocks, indices)))
 
 ###############################################################################
